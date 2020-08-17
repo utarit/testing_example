@@ -10,6 +10,7 @@ class WeatherWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     if (weather.cod == 200) {
       return Container(
+        width: 500,
         child: ListTile(
           title: Text(weather.city),
           subtitle: Text(weather.description),
